@@ -1,3 +1,25 @@
+import pandas as pd
+import numpy as np
+import argparse
+import re,sys,os,math,gc
+#plot module
+import matplotlib as mpl
+mpl.use('Agg')
+import matplotlib.pyplot as plt
+import matplotlib.patches as mpatches
+from mpl_toolkits.axes_grid1.inset_locator import inset_axes
+from mpl_toolkits.axes_grid1.inset_locator import inset_axes
+plt.rcParams.update({'figure.max_open_warning': 100})
+plt.style.use('seaborn-colorblind')
+mpl.rcParams['ytick.direction'] = 'out'
+
+#可P
+import matplotlib as mpl
+mpl.rcParams['pdf.fonttype']=42
+mpl.rcParams['ps.fonttype']=42
+
+
+
 #draw horizontal barplot
 def draw_bar(sampleLst,datalist,outfile):
     fig, axes = plt.subplots(nrows=1, ncols=1, figsize=(6, 4), sharex=False)
